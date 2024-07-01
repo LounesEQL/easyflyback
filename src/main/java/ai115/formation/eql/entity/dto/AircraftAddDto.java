@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class AircraftAddDto {
 
-    private String name;
+
     private String immatriculation;
     private String type;
     private String model;
@@ -12,7 +12,7 @@ public class AircraftAddDto {
     private int HdV;
     private LocalDate dateImmatriculation;
 
-    public String getName() {return name;}
+
     public String getImmatriculation() {return immatriculation;}
     public String getType() {return type;}
     public String getModel() {return model;}

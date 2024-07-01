@@ -14,16 +14,19 @@ import java.util.Optional;
 public interface SpaceService {
 
         Optional<Aircraft> findAircraft(Long id);
+        List<Aircraft> findAll();
         Aircraft saveAircraft(AircraftAddDto aircraftAddDto);
         void deleteAircraft( AircraftDeleteDto aircraftDeleteDto);
 
         List<StudentPilot> findStudentPilots(Long id);
         StudentPilot saveStudentPilot(StudentPilotAddDto studentPilotAddDto);
-        void deleteStudentPilot(StudentPilotDeleteDto studentPilotDeleteDto);
+
+        }
 
 
 
 
 
 
-}
+
+

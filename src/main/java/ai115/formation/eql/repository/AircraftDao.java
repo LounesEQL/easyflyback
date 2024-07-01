@@ -13,7 +13,4 @@ public interface AircraftDao extends JpaRepository<Aircraft, Long> {
     List<Aircraft> findByimmatriculation(String immatriculation);
 
 
-
-
-
 }

@@ -23,13 +23,14 @@ public class Person implements UserDetails {
     private String password;
     private int HdV;
     private String licence;
+    private String email;
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Role> roles = new ArrayList<>();
 
     public Person() {
     }
 
-    public Person(Long id, String name, String surname, String username, String password, int hdV, String licence) {
+    public Person(Long id, String name, String surname, String username, String password, int hdV, String licence, String email, List<Role> roles) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -37,7 +38,8 @@ public class Person implements UserDetails {
         this.password = password;
         HdV = hdV;
         this.licence = licence;
-
+        this.email = email;
+        this.roles = roles;
     }
 
     /// Getters
@@ -45,11 +47,9 @@ public class Person implements UserDetails {
     public Long getId() {
         return id;
     }
-
     public String getName() {
         return name;
     }
-
     public String getSurname() {
         return surname;
     }
@@ -67,14 +67,13 @@ public class Person implements UserDetails {
     public int getHdV() {
         return HdV;
     }
-
     public String getLicence() {
         return licence;
     }
-
     public List<Role> getRoles() {
         return roles;
     }
+    public String getEmail() {return email;}
 
     /// Setters
 
@@ -82,34 +81,28 @@ public class Person implements UserDetails {
     public void setId(Long id) {
         this.id = id;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
     public void setUsername(String username) {
         this.username = username;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }
-
     public void setHdV(int hdV) {
         HdV = hdV;
     }
-
     public void setLicence(String licence) {
         this.licence = licence;
     }
-
     public void setRoles(List<Role> roles) {
         this.roles = roles;
     }
+    public void setEmail(String email) {this.email = email;}
 
     @Override
     public boolean isAccountNonExpired() {

@@ -17,8 +17,8 @@ public class Pilot extends Person{
         this.reservationPilots = reservationPilots;
     }
 
-    public Pilot(Long id, String name, String surname, String username, String password, int hdV, String licence, List<ReservationPilot> reservationPilots) {
-        super(id, name, surname, username, password, hdV, licence);
+    public Pilot(Long id, String name, String surname, String username, String password, int hdV, String licence, String email, List<Role> roles, List<ReservationPilot> reservationPilots) {
+        super(id, name, surname, username, password, hdV, licence, email, roles);
         this.reservationPilots = reservationPilots;
     }
 

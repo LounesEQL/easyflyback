@@ -30,8 +30,20 @@ public class SpaceServiceImpl implements SpaceService {
     }
 
     @Override
+    public List<Aircraft> findAll() {return aircraftDao.findAll();}
+
+    @Override
     public Aircraft saveAircraft(AircraftAddDto aircraftAddDto) {
-        return null;
+        Aircraft aircraft = new Aircraft();
+
+        aircraft.setImmatriculation(aircraftAddDto.getImmatriculation());
+        aircraft.setType(aircraftAddDto.getType());
+        aircraft.setModel(aircraftAddDto.getModel());
+        aircraft.setPicture(aircraftAddDto.getPicture());
+        aircraft.setHdV(aircraftAddDto.getHdV());
+        aircraft.setDateImmatriculation(aircraftAddDto.getDateImmatriculation());
+
+        return aircraftDao.save(aircraft);
     }
 
     @Override
@@ -50,8 +62,5 @@ public class SpaceServiceImpl implements SpaceService {
         return null;
     }
 
-    @Override
-    public void deleteStudentPilot(StudentPilotDeleteDto studentPilotDeleteDto) {
 
-    }
 }
