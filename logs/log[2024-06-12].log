@@ -1,0 +1,30 @@
+[INFO ] 2024-06-12 16:39:52.403 [main] EqlApplication - Starting EqlApplication using Java 21.0.2 with PID 10768 (C:\Users\Formation\Desktop\EasyFly\target\classes started by Formation in C:\Users\Formation\Desktop\EasyFly)
+[INFO ] 2024-06-12 16:39:52.417 [main] EqlApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2024-06-12 16:39:53.376 [main] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2024-06-12 16:39:53.527 [main] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138 ms. Found 12 JPA repository interfaces.
+[INFO ] 2024-06-12 16:39:54.318 [main] TomcatWebServer - Tomcat initialized with port 8081 (http)
+[INFO ] 2024-06-12 16:39:54.334 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+[INFO ] 2024-06-12 16:39:54.337 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2024-06-12 16:39:54.337 [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+[INFO ] 2024-06-12 16:39:54.416 [main] [/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2024-06-12 16:39:54.418 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1936 ms
+[INFO ] 2024-06-12 16:39:54.648 [main] LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2024-06-12 16:39:54.754 [main] Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+[INFO ] 2024-06-12 16:39:54.817 [main] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[INFO ] 2024-06-12 16:39:55.180 [main] SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO ] 2024-06-12 16:39:55.225 [main] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2024-06-12 16:39:55.453 [main] HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c4057f9
+[INFO ] 2024-06-12 16:39:55.455 [main] HikariDataSource - HikariPool-1 - Start completed.
+[WARN ] 2024-06-12 16:39:55.498 [main] deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[WARN ] 2024-06-12 16:39:55.500 [main] deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+[WARN ] 2024-06-12 16:39:55.775 [main] EntityBinder - HHH000457: Joined inheritance hierarchy [ai115.formation.eql.entity.Person] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+[INFO ] 2024-06-12 16:39:56.982 [main] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO ] 2024-06-12 16:39:58.700 [main] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2024-06-12 16:39:59.690 [main] DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f93fce1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5457123a, org.springframework.security.web.context.SecurityContextHolderFilter@5984742f, org.springframework.security.web.header.HeaderWriterFilter@5e89e527, org.springframework.web.filter.CorsFilter@4690a37e, org.springframework.security.web.authentication.logout.LogoutFilter@1abf38d1, ai115.formation.eql.security.JWTAuthentificationFilter@2cf97875, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@359903b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1071f3ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23f27434, org.springframework.security.web.session.SessionManagementFilter@6b6c882c, org.springframework.security.web.access.ExceptionTranslationFilter@314407dd, org.springframework.security.web.access.intercept.AuthorizationFilter@7a5a26b7]
+[INFO ] 2024-06-12 16:40:00.208 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+[INFO ] 2024-06-12 16:40:00.238 [main] TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+[INFO ] 2024-06-12 16:40:00.250 [main] EqlApplication - Started EqlApplication in 8.301 seconds (process running for 9.517)
+[WARN ] 2024-06-12 18:02:12.708 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m16s719ms691µs200ns).
+[INFO ] 2024-06-12 18:02:49.874 [http-nio-8081-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2024-06-12 18:02:49.876 [http-nio-8081-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2024-06-12 18:02:49.880 [http-nio-8081-exec-1] DispatcherServlet - Completed initialization in 3 ms

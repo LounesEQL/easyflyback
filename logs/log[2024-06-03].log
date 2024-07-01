@@ -1,0 +1,6 @@
+[WARN ] 2024-06-03 10:39:52.487 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2d16h10m19s298ms105µs100ns).
+[WARN ] 2024-06-03 11:11:52.203 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m59s716ms963µs200ns).
+[WARN ] 2024-06-03 13:00:08.156 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h18m15s464ms590µs).
+[WARN ] 2024-06-03 17:12:07.394 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h2m29s94ms286µs300ns).
+[WARN ] 2024-06-03 18:06:45.685 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m8s4ms85µs900ns).
+[WARN ] 2024-06-03 23:53:33.289 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h46s733ms222µs500ns).
