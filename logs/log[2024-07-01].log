@@ -1708,3 +1708,5 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 [INFO ] 2024-07-01 15:12:06.282 [http-nio-8081-exec-2] DispatcherServlet - Completed initialization in 2 ms
 [WARN ] 2024-07-01 15:31:03.013 [http-nio-8081-exec-10] DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public void ai115.formation.eql.controller.rest.SpaceRestController.deleteAircraft(ai115.formation.eql.entity.dto.AircraftDeleteDto)]
 [ERROR] 2024-07-01 15:31:03.026 [http-nio-8081-exec-10] AuthEntryPointJwt - Unauthorized error: Full authentication is required to access this resource
+[WARN ] 2024-07-01 18:49:35.057 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h7m24s988ms194µs800ns).
+[WARN ] 2024-07-01 19:13:39.500 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m4s214ms655µs400ns).
