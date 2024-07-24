@@ -18,8 +18,9 @@ public interface SpaceService {
         Aircraft saveAircraft(AircraftAddDto aircraftAddDto);
         void deleteAircraft( AircraftDeleteDto aircraftDeleteDto);
 
-        List<StudentPilot> findStudentPilots(Long id);
+        Optional<StudentPilot> findStudentPilots(Long id);
         StudentPilot saveStudentPilot(StudentPilotAddDto studentPilotAddDto);
+        List<StudentPilot> findAllStudentPilots();
 
         }
 
