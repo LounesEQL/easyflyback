@@ -20,6 +20,7 @@ public class SpaceServiceImpl implements SpaceService {
     @Autowired
     AircraftDao aircraftDao;
 
+    @Autowired
     StudentPilotDao studentPilotDao;
 
 
@@ -46,10 +47,7 @@ public class SpaceServiceImpl implements SpaceService {
     }
 
     @Override
-    public void deleteAircraft(AircraftDeleteDto aircraftDeleteDto) {
-
-    }
-
+    public void deleteAircraft(AircraftDeleteDto aircraftDeleteDto) {}
 
     @Override
     public Optional<StudentPilot> findStudentPilots(Long id) {
@@ -62,7 +60,7 @@ public class SpaceServiceImpl implements SpaceService {
     }
 
     @Override
-    public List<StudentPilot> findAllStudentPilots() {return null;}
+    public List<StudentPilot> findAllStudentPilot() { return studentPilotDao.findAll(); }
 
 
 }

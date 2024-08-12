@@ -5131,3 +5131,5 @@ Caused by: java.sql.SQLSyntaxErrorException: La table 'easy_fly_db.unavailabilit
 [INFO ] 2024-07-25 00:27:09.997 [http-nio-8081-exec-1] [/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [INFO ] 2024-07-25 00:27:09.997 [http-nio-8081-exec-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 2024-07-25 00:27:09.998 [http-nio-8081-exec-1] DispatcherServlet - Completed initialization in 1 ms
+[WARN ] 2024-07-25 02:16:08.939 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h36m22s176ms811µs800ns).
+[WARN ] 2024-07-25 22:57:26.016 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20h40m47s62ms633µs600ns).

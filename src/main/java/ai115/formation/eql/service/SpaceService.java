@@ -20,9 +20,10 @@ public interface SpaceService {
 
         Optional<StudentPilot> findStudentPilots(Long id);
         StudentPilot saveStudentPilot(StudentPilotAddDto studentPilotAddDto);
-        List<StudentPilot> findAllStudentPilots();
+        List<StudentPilot> findAllStudentPilot();
 
-        }
+
+}
 
 
 

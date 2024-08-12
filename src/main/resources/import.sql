@@ -7,7 +7,7 @@ INSERT INTO `role` (`name`) VALUES ('INSTRUCTOR');
 INSERT INTO `role` (`name`) VALUES ('STUDENT');
 INSERT INTO `role` (`name`) VALUES ('PILOT');
 
-INSERT INTO `person` (`name`, `password`, `surname`, `username`, `person_type`, `hdv`, `licence` ) VALUES ('John', '$2a$10$qaimlDx3J5UbEBmdV/F6MeLvD2VvjnV0qrYJm016j.HZdRxEXk312', 'Doe', 'johndoe', 'Pilot', '200', 'Commercial');
+INSERT INTO `person` (`name`, `password`, `surname`, `username`, `person_type`, `hdv`, `licence` ) VALUES ('John', '$2a$10$qaimlDx3J5UbEBmdV/F6MeLvD2VvjnV0qrYJm016j.HZdRxEXk312', 'Doe', 'johndoe', 'pilot', '200', 'Commercial');
 INSERT INTO `person` (`name`, `password`, `surname`, `username`, `person_type`, `hdv`, `licence`) VALUES ('Alice', 'pass456', 'Smith', 'alicesmith', 'Pilot', '300', 'Private');
 INSERT INTO `person` (`name`, `password`, `surname`, `username`, `person_type`, `hdv`, `licence`) VALUES ('Bob', 'pass789', 'Johnson', 'bobjohnson', 'Pilot', '150', 'Commercial');
 INSERT INTO `person` (`name`, `password`, `surname`, `username`, `person_type`, `hdv`, `licence`) VALUES ('Jerome', 'pass123', 'client', 'jeromec', 'StudentPilot', '150', 'Commercial');
@@ -16,7 +16,7 @@ INSERT INTO `person` (`name`, `password`, `surname`, `username`, `person_type`, 
 
 INSERT INTO `pilot` (`id`) VALUES (1);
 INSERT INTO `pilot` (`id`) VALUES (2);
-INSERT INTO `pilot` (`id`) VALUES (3);
+INSERT INTO `pilot` (`id`) VALUES (4);
 
 INSERT INTO `person_roles` (`person_id`, `roles_id`) VALUES (1, 1);
 INSERT INTO `person_roles` (`person_id`, `roles_id`) VALUES (2, 2);
@@ -34,7 +34,7 @@ INSERT INTO `promotion` (`instructor_id`, `name`) VALUES (1, 'Spring 2023');
 INSERT INTO `promotion` (`instructor_id`, `name`) VALUES (2, 'Summer 2023');
 INSERT INTO `promotion` (`instructor_id`, `name`) VALUES (3, 'Fall 2023');
 
-INSERT INTO `student_pilot` (`id`, `promotion_id`) VALUES (4, 1);
+INSERT INTO `student_pilot` (`id`, `promotion_id`) VALUES (3, 1);
 INSERT INTO `student_pilot` (`id`, `promotion_id`) VALUES (5, 2);
 INSERT INTO `student_pilot` (`id`, `promotion_id`) VALUES (6, 1);
 

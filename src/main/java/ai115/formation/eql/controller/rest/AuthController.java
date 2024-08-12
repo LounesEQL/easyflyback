@@ -51,6 +51,10 @@ public class AuthController {
         Person person = new Person();
         person.setUsername(registerDto.getUsername());
         person.setPassword(passwordEncoder.encode(registerDto.getPassword()));
+        person.setEmail(registerDto.getEmail());
+        person.setLicence(registerDto.getLicence());
+        person.setName(registerDto.getName());
+        person.setSurname(registerDto.getSurname());
         Role roles = roleDao.findByName("PILOT").get();
         person.setRoles(Collections.singletonList(roles));
 

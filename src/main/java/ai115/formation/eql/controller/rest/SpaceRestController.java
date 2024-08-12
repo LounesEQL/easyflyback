@@ -4,7 +4,9 @@ package ai115.formation.eql.controller.rest;
 import ai115.formation.eql.entity.Aircraft;
 import ai115.formation.eql.entity.StudentPilot;
 import ai115.formation.eql.entity.dto.AircraftAddDto;
+import ai115.formation.eql.entity.dto.StudentPilotAddDto;
 import ai115.formation.eql.repository.AircraftDao;
+import ai115.formation.eql.repository.StudentPilotDao;
 import ai115.formation.eql.service.SpaceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,7 +23,7 @@ public class SpaceRestController {
 
     SpaceService spaceService;
     AircraftDao aircraftDao;
-    StudentPilot studentPilot;
+    StudentPilotDao studentPilotDao;
 
     @GetMapping("aircraft/{id}")
     public Optional<Aircraft> findAircraft( @PathVariable long id) {return spaceService.findAircraft(id);}
@@ -37,7 +39,14 @@ public class SpaceRestController {
     public void deleteAircraft( @PathVariable long id) {aircraftDao.deleteById(id);}
 
     @GetMapping("studentPilot")
-    public List<StudentPilot> findAllStudentPilots() {return spaceService.findAllStudentPilots();}
+    public List<StudentPilot> findAllStudentPilot() {return spaceService.findAllStudentPilot();}
+
+    @GetMapping("studentPilot/{id}")
+    public Optional<StudentPilot> findStudentPilots( @PathVariable long id) {return spaceService.findStudentPilots(id);}
+
+    @PostMapping("studentPilot")
+    public StudentPilot saveStudentPilot(@RequestBody StudentPilotAddDto studentPilotAddDto)
+    {return spaceService.saveStudentPilot(studentPilotAddDto);}
 
 
     /// Setter ///
@@ -46,4 +55,7 @@ public class SpaceRestController {
 
     @Autowired
     public void setAircraftDao(AircraftDao aircraftDao) {this.aircraftDao = aircraftDao;}
+
+    @Autowired
+    public void setStudentPilotDao(StudentPilotDao studentPilotDao) {this.studentPilotDao = studentPilotDao;}
 }
